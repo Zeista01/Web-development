@@ -93,6 +93,8 @@ li {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     body {
+        background-image: url('sample2.jpg');
+        /* Replace with a URL to a romantic background image for mobile devices */
         padding: 20px;
     }
 
@@ -126,20 +128,20 @@ li {
 
 @media (min-width: 769px) {
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     p {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 
     .button {
-        font-size: 1.7em;
-        padding: 1.2em 2.5em;
+        font-size: 1.5em;
+        padding: 1em 2em;
     }
 
     .footer-container {
-        padding: 20px;
+        padding: 15px;
     }
 
     ul {
@@ -148,7 +150,7 @@ li {
     }
 
     li {
-        margin: 0 10px;
-        font-size: 1.1em;
+        margin: 5px;
+        font-size: 1em;
     }
 }
