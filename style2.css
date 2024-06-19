@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('background.jpg');
+    /* Replace with a URL to a romantic background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #f5d9d2;
+    /* Change text color to white for better contrast */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 4px #000;
+    /* Add a shadow for better text readability */
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-family: 'Great Vibes', cursive;
+    color: #ff69b4;
+    text-shadow: 1px 1px 3px #000;
+    /* Add a shadow for better text readability */
+}
+
+.button {
+    background-color: #ff69b4;
+    /* Pink color to match the romantic theme */
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #000;
+    /* Add shadow for a 3D effect */
+}
+
+.button:hover {
+    background-color: #ff1493;
+    /* Darker pink for hover effect */
+}
+
+.footer-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Increased opacity for better contrast */
+    padding: 15px;
+    /* Adjusted padding to make it more compact */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    /* White color for maximum contrast */
+    text-align: center;
+    /* Center the text for better visibility */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align items for better visibility */
+}
+
+li {
+    margin-bottom: 5px;
+    /* Adjusted margin to make it more compact */
+    font-size: 1em;
+    /* Adjusted font size to make it more compact */
+    color: #ffffff;
+    /* Change text color to white for better contrast */
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px #000;
+    /* Add a shadow for better text readability */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .button {
+        font-size: 1.2em;
+        padding: 0.8em 1.5em;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+
+    .button {
+        font-size: 1.7em;
+        padding: 1.2em 2.5em;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 10px;
+        font-size: 1.1em;
+    }
+}
