@@ -6,7 +6,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-image: url('background.jpg');
+
     /* Replace with a URL to a romantic background image */
     background-size: cover;
     background-position: center;
@@ -127,6 +127,10 @@ li {
 }
 
 @media (min-width: 769px) {
+    body {
+        background-image: url('background.jpg');
+    }
+
     h1 {
         font-size: 3em;
     }
