@@ -119,6 +119,7 @@ nav a:hover {
 
     p {
         font-size: 1.2em;
+        text-align: center;
         margin: 0.5em 0;
         font-family: 'Great Vibes', cursive;
         color: #f8eded;
@@ -156,6 +157,9 @@ nav a:hover {
 
     p {
         font-size: 1.5em;
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
     }
 
     .button {
