@@ -43,18 +43,6 @@ p {
     background-color: #ff1493;
 }
 
-.footer-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    color: #f5d9d2;
-    text-align: center;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -129,7 +117,10 @@ nav a:hover {
 
     p {
         font-size: 1.2em;
-        text-align: center;
+        margin: 0.5em 0;
+        font-family: 'Great Vibes', cursive;
+        color: #f8eded;
+        text-shadow: 1px 1px 3px #000;
     }
 
     .button {
