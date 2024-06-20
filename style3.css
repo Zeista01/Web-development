@@ -6,22 +6,16 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    /* Replace with a URL to a romantic background image */
     background-size: cover;
     background-position: center;
     position: relative;
     color: #f5d9d2;
-    /* Change text color to white for better contrast */
 }
 
 h1 {
     font-size: 3em;
-    margin: 0.2em 0;
-    /* Adjust margin to move the title upwards */
-    padding-top: 0.5em;
-    /* Add padding to create space from the top */
+    margin: 0.5em 0;
     text-shadow: 2px 2px 4px #000;
-    /* Add a shadow for better text readability */
 }
 
 p {
@@ -30,12 +24,10 @@ p {
     font-family: 'Great Vibes', cursive;
     color: #d6aaaa;
     text-shadow: 1px 1px 3px #000;
-    /* Add a shadow for better text readability */
 }
 
 .button {
     background-color: #ff69b4;
-    /* Pink color to match the romantic theme */
     color: white;
     padding: 1em 2em;
     font-size: 1.5em;
@@ -45,28 +37,22 @@ p {
     margin-top: 1em;
     text-decoration: none;
     box-shadow: 2px 2px 5px #000;
-    /* Add shadow for a 3D effect */
 }
 
 .button:hover {
     background-color: #ff1493;
-    /* Darker pink for hover effect */
 }
 
 .footer-container {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Increased opacity for better contrast */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
-    /* Adjusted padding to make it more compact */
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    color: #ffffff;
-    /* White color for maximum contrast */
+    color: #f5d9d2;
     text-align: center;
-    /* Center the text for better visibility */
 }
 
 ul {
@@ -74,29 +60,65 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
+    color: #f5d9d2;
     flex-direction: column;
     align-items: center;
-    /* Center align items for better visibility */
 }
 
 li {
     margin-bottom: 5px;
-    /* Adjusted margin to make it more compact */
     font-size: 1em;
-    /* Adjusted font size to make it more compact */
-    color: #ffffff;
-    /* Change text color to white for better contrast */
+    color: #f5d9d2;
     text-transform: uppercase;
     cursor: pointer;
     text-shadow: 1px 1px 3px #000;
-    /* Add a shadow for better text readability */
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0cm;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Opaque when hovered */
+}
+
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: #f5d9d2;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     body {
         background-image: url('sample2.jpg');
-        /* Replace with a URL to a romantic background image for mobile devices */
         padding: 20px;
     }
 
@@ -115,8 +137,10 @@ li {
         padding: 0.8em 1.5em;
     }
 
-    .footer-container {
-        padding: 10px;
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
     }
 
     ul {
@@ -146,17 +170,39 @@ li {
         padding: 1em 2em;
     }
 
-    .footer-container {
-        padding: 15px;
-    }
-
     ul {
         flex-direction: row;
         justify-content: center;
+        color: #f5d9d2;
     }
 
     li {
         margin: 5px;
         font-size: 1em;
+        color: #f5d9d2;
     }
+}
+
+/* Styles for the About Me page */
+.about-me {
+    text-align: center;
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-me h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ff69b4;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.about-me p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #f5d9d2;
+    text-shadow: 1px 1px 3px #000;
 }
