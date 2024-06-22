@@ -43,7 +43,7 @@ header .dropdown-content {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
-    font-size: 0.5em
+    font-size: 0.5em;
 }
 
 header .dropdown-content li {
@@ -135,6 +135,15 @@ li {
 
     header h1 a {
         font-size: 1em;
+    }
+
+    header h1:hover .dropdown-content {
+        display: none;
+        /* Prevent hover action on mobile */
+    }
+
+    #dropdownMenu.show {
+        display: block;
     }
 
     .content {
