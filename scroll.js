@@ -1,15 +1,8 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    var dropdownMenu = document.getElementById("dropdownMenu");
-
-    window.addEventListener("scroll", function () {
-        var scrollPosition = window.scrollY + window.innerHeight;
-        var threshold = document.body.offsetHeight;
-
-        if (scrollPosition >= threshold) {
-            dropdownMenu.classList.add("show");
-        } else {
-            dropdownMenu.classList.remove("show");
-        }
-    });
+document.addEventListener("scroll", function() {
+    var dropdownContent = document.querySelector(".dropdown-content");
+    if (window.scrollY === 0) {
+        dropdownContent.classList.add("show");
+    } else {
+        dropdownContent.classList.remove("show");
+    }
 });

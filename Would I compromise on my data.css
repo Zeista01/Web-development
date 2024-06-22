@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     color: #000;
@@ -84,7 +85,7 @@ nav a:hover {
 }
 
 main {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: 5em auto 2em;
 }
@@ -169,6 +170,14 @@ footer nav a:hover {
         padding: 20px;
     }
 
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -192,4 +201,7 @@ footer nav a:hover {
         background-image: url('pic3.jpg');
     }
 
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }

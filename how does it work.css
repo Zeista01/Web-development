@@ -138,14 +138,13 @@ li {
     }
 
     header h1:hover .dropdown-content {
-        display: none;
-        /* Prevent hover action on mobile */
+        display: none; /* Prevent hover action on mobile */
     }
 
     #dropdownMenu.show {
         display: block;
     }
-
+    
     .content {
         margin: 20px 10px;
         padding: 20px;
