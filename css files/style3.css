@@ -114,6 +114,59 @@ nav a:hover {
     /* Reduced padding */
 }
 
+/* Style for the header */
+.header-color {
+    color: #ff69b4;
+    text-align: center;
+}
+
+/* Center the question container and its contents */
+#question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#question-container h3 {
+    margin-bottom: 20px;
+    color: rgb(250, 0, 0);
+}
+
+#question-container button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+#question-container button:hover {
+    background-color: #ff1493;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     body {
@@ -167,6 +220,7 @@ nav a:hover {
     li {
         font-size: 0.9em;
     }
+    
 }
 
 @media (min-width: 769px) {
